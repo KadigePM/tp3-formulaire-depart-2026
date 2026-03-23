@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Commander une brochure gratuite</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="entete">
+            <h3 class="sous-titre"> PUBLICATION GRATUITE</h3>
+            <h1 class="titre"> Commander une <span class="mot_couleur">brochure</span> gratuite</h1>
+        </header>
+       <main class="brochure">
+        <div class="champ__formulaire">
+            <div class="champ__brochure">
+              <img class="icon" src="images/icon-format-brochure.svg" width="50" height="29" alt="icone de brochure" />
+                <p class="nom__section">FORMAT DE LA BRANCHE</p>
+                    <button type="submit">
+                        <img src="images/icon-file-print.svg" width="74" height="29" alt="image document imprimé" />
+                    </button>
+                    <button type="submit">
+                        <img src="images/icon-file-pdf.svg" width="74" height="29" alt="image document PDF" />
+                    </button>
+                    <button typw="submit">
+                        <img src="images/icon-file-epub.svg" width="74" height="29" alt="image document ePub" />
+                    </button>
+            </div>
+        </div>
+        <div class="champ__contact">
+              <img class="icon" src="images/icon-contact.svg" width="50" height="29" alt="icone contact" />
+                <p class="nom__section"> INFORMATIONS DE CONTACT</p>
+                     <div class="champ__conteneur">
+                        <label class="champ__etiquette" for="prenom">Prénom</label>
+                        <input class="champ--prenom" id="prenom" name="prenom" type="text"required />
+                    </div>
+                    <div class="champ__conteneur">
+                        <label class="champ__etiquette" for="nom">Nom</label>
+                        <input class="champ--nom" id="nom" name="nom" type="text"required />
+                    </div>
+                    <div class="champ__conteneur">
+                        <label class="champ__etiquette" for="prenom">Courriel  <span class="mot_form"> (exemple@domaine.com) </span></label>
+                        <input class="champ--adresse" id="adresse" name="adresse" type="text"required />
+                    </div>
+                    <div class="champ__conteneur">
+                        <label class="champ__etiquette" for="telephone">Téléphone <span class="mot_form"> (514 555 0123)</span></label>
+                        <input class="champ--telephone" id="telephone" name="telephone" type="text"required />
+                    </div>
+        <div class="champ__contact">
+              <img class="icon" src="images/icon-postal.svg" width="50" height="29" alt="icone contact" />
+                <p class="nom__section"> INFORMATIONS POSTALES</p>
+                    <div class="champ__conteneur">
+                        <label class="champ__etiquette" for="adresse">Adresse <span>(123, rue Principale)</span></label>
+                        <input class="champ--prenom" id="adresse" name="adresse" type="text"required />
+                    </div>
+                     <div class="champ__conteneur">
+                        <label for="pays">Pays </label>
+                            <select name="listepays" id="pays">
+                                <option value="australie">Australie</option>
+                                <option value="belgique" >Belgique</option>
+                                <option value="canada">Canada</option>
+                                <option value="danemark">Danemark</option>
+                                <option value="france">France</option>
+                            </select>
+                     </div>
+                     <div class="champ__conteneur">
+                        <label class="form__label">Province ou État</label>
+                            <select name="listeprovince" id="province">
+                                 <option value="alberta">Alberta</option>
+                                    <option value="colombie_britannique">Colombie-Britannique</option>
+                                    <option value="ile_du_prince_edouard">Île-du-Prince-Édouard</option>
+                                    <option value="manitoba">Manitoba</option>
+                                    <option value="nouveau_brunswick">Nouveau-Brunswick</option>
+                                    <option value="nouvelle_ecosse">Nouvelle-Écosse</option>
+                                    <option value="ontario">Ontarie</option>
+                                      <option value="quebec" selected="selected">Québec</option>
+                                      <option value="saskatchewan">Saskatchewan</option>
+                                      <option value="terre_neuve_et_labrador">Terre-Neuve-et-Labrador</option>
+                    </select>
+                    <div class="champ__conteneur">
+                        <label class="champ__etiquette" for="code postal">Code postal <span>(A1A 1A1)</span></label>
+                        <input class="champ--code postal" id="code postal" name="postal" type="text"required />
+                    </div>
+                     <div class="contact__div-soumettre">
+                        <input class="contact__champ-soumettre" type="submit" value="Commander">
+                    </div>
+                
+
+
+
+
+        </div>
+
+
+
+
+        
+       </main>
+    </body>
+</html>
