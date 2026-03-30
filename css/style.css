@@ -26,9 +26,12 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: ?;
-    --couleur-secondaire: ?;
-    --couleur-tertiaire: ?;
+    --couleur-primaire: #ffa500;
+    --couleur-secondaire: #4c0c91 ;
+    --couleur-tertiaire: #ffebc5;
+
+    --couleur-texte: #000;
+    --couleur-texte: #fff;
 }
 
 /* ------- Styles de base ------- */
@@ -102,7 +105,244 @@ img {
     background-position: 99px 0;
 }
 
-
+/*general*/
 body{
-    background-color: pink;
+    background-color: rgb(232, 224, 220);
 }
+
+main {
+  background-color: white;
+border-radius: 16px;
+padding: clamp(30px, 5vw, 60px);
+max-width: 680px;
+margin: -3em auto 0 auto;
+}
+/*header*/
+.entete {
+  background: linear-gradient(135deg, #4c0c91, #ffa500);
+  color: white;
+  padding: 60px 20px 120px;
+  text-align: center;
+}
+/*header texte et déco*/
+.sous-titre {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.titre {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+.mot_couleur {
+  color: #ffebc5;
+  font-style: italic;
+}
+/*autre generalité*/
+.mot_form{
+    color:#4c0c91;
+    opacity:0.5;
+}
+.champ__etiquette{
+    color: #4c0c91;
+}
+.brochure {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  padding: 0 20px 40px;
+}
+.formulaire {
+  border-radius: 14px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+}
+fieldset {
+  border: none;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.legend {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #4c0c91;
+}
+
+.icon {
+  background-color: #ffa500;
+    border-radius: 5px;
+    width:25px;
+    height:25px;
+    margin-right: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+
+  
+}
+/*format de la brochure*/
+.selection_format{
+    margin-top:50px;
+outline: 3px solid #ffa500;
+margin: 10px;
+padding: 20px;
+border-radius: 20px;
+display: grid;
+align-items: center;
+justify-items: center;
+}
+
+.selection_format input {
+  display: none;
+}
+.selection_format:hover{
+    border: 2px solid #4c0c91;
+    background-color: #ffebc5;
+}
+.img_docu {
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .champ__brochure {
+    display: flex;
+    gap: 15px;
+  }
+  .selection_format {
+    flex: 1;
+  }
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border: 2px solid ;
+  border-color: #4c0c91;
+  background-color:#ffebc5;
+}
+/*info contact*/
+.section__contact {
+  display: flex;
+  gap: 15px;
+}
+
+.section__contact > div {
+  flex: 1;
+}
+.champ--prenom{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+.champ--nom{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+.champ--courriel{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+.champ--telephone{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+/*info postal*/
+.champ--adresse{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+.champ--codePostal{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+.location{
+    color:#4c0c91;
+}
+select{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  background: #fff;
+  font-size: 14px;
+}
+.location {
+  display: flex;
+  gap: 15px;
+}
+
+.location > div {
+  flex: 1;
+}
+.case__cocher {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #ffebc5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.case__cocher input {
+  width: auto;
+  margin-top: 3px;
+}
+.contact__div-soumettre {
+  text-align: right;
+  margin-top: 20px;
+}
+.contact__champ-soumettre {
+  background: #ffa500;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact__champ-soumettre:hover {
+  background: #4c0c91;
+}
+
